@@ -1,0 +1,20 @@
+.favorites-page {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.card {
+  transition: transform 0.2s;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5em;
+  color: #007bff;
+  margin-top: 20px;
+}

@@ -1,0 +1,50 @@
+.carousel-container {
+  background-color: #ffcc00;
+  height: 470px;
+  width: 100%; /* Cambia a 100% para ocupar el ancho completo del contenedor padre */
+  max-width: 100%; /* Mantiene un ancho máximo */
+  border-radius: 20px;
+  padding: 20px;
+  border: #2e2e2e solid 2px; /* Añadido el grosor del borde */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+.carousel-button {
+  background-color: #ff4747;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Asegura que el botón ocupe todo el ancho del contenedor */
+}
+
+.carousel-button:hover {
+  background-color: #e03e3e;
+}
+
+.carousel-content {
+  display: flex; /* Cambiado a flex para mejor alineación */
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0; /* Espacio vertical */
+  height: 300px;
+  background-color: #2e2e2e;
+  border-radius: 15px;
+}
+
+.carousel-item {
+ object-fit: cover;
+}
+
+.carousel-item img {
+  width: 300px;
+  height: 200px;
+  margin-left: -150px;
+  object-fit: cover;
+  align-items: center;
+  border-radius: 20px;
+}

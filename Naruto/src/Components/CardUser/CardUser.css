@@ -1,0 +1,41 @@
+.div-carduser-content {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh; 
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+#data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: var(--card-bg-color, #fff); 
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background-color: #282c34; 
+  color: #fff; 
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #ff1313f6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.custom-bg {
+  --card-bg-color: #ffeb3b; /
+}
