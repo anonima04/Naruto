@@ -32,7 +32,7 @@ const FavoritesPage = () => {
     <div className="row">
       {data.length > 0 ? (
         data.map((item) => (
-          <div className="col-md-4 mb-4" key={item}>
+          <div className="col-md-4 md-4" key={item}>
             <div className="card">
               <img src={item.images[0]} className="card-img-top" alt={item.name} />
               <div className="card-body">

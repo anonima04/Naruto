@@ -43,10 +43,9 @@ const CardUser = () => {
           characters.map((character) => (
             <div className="card" key={character.id} onClick={() => handleCartClick(character.id)}>
               <Cart
-                name={character.name}
+                name={character.name} 
                 images={character.images}
                 natureType={character.natureType}
-                
               />
             </div>
           ))

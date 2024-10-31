@@ -75,7 +75,7 @@ const CharacterPage = () => {
           <p><strong>Ova: </strong>{character.debut.ova}</p>
           <p><strong>AppersIn: </strong>{character.debut.appearsIn}</p>
         </div>
-  
+        {character.family ? (
         <div className="family-characters">
           <h3>Familia</h3>
           <p><strong>Papá: </strong>{character.family.father || "No disponible"}</p>
@@ -86,6 +86,9 @@ const CharacterPage = () => {
           <p><strong>Hijo adoptivo: </strong>{character.family.adoptiveSon || "No tiene"}</p>
           <p><strong>Abuelo: </strong>{character.family.godfather || "No disponible"}</p>
         </div>
+         ) : (
+          <p>No se encontró información de la familia.</p>
+        )}
   
         <div className="jutsu">
           <h3>Jutsu</h3>
@@ -112,8 +115,6 @@ const CharacterPage = () => {
           <p><strong>Equipo: </strong>{character.personal.team || "No disponible"}</p>
           <p><strong>Clan: </strong>{character.personal.clan || "No disponible"}</p>
           <p><strong>Títulos: </strong>{character.personal.titles || "No disponible"}</p>
-          <p><strong>Número de registración ninja: </strong>{character.rank.ninjaRegistration || "No disponible"}</p>
-          <p><strong>Rango: </strong>{character.rank.ninjaRank.Gaiden || "No disponible"}</p>
           <p><strong>Herramientas: </strong>{character.tools || "No disponible"}</p>
           
           <div className="voiceAutors">
